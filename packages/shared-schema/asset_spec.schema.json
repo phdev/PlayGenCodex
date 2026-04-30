@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "asset_spec.schema.json",
+  "title": "AssetSpec",
+  "type": "object",
+  "required": ["asset_id", "kind", "lod", "budget"],
+  "properties": {
+    "asset_id": { "type": "string" },
+    "kind": { "type": "string", "enum": ["splat", "mesh", "material", "texture", "audio"] },
+    "lod": { "type": "integer", "minimum": 0, "maximum": 4 },
+    "budget": {
+      "type": "object",
+      "required": ["max_vertices", "max_texture_px"],
+      "properties": {
+        "max_vertices": { "type": "integer", "minimum": 1 },
+        "max_texture_px": { "type": "integer", "minimum": 64 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

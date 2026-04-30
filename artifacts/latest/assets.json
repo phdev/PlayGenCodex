@@ -1,0 +1,20 @@
+{
+  "slice_run_id": "slice-f171c226",
+  "assets": [
+    {
+      "asset_id": "splat_env_01",
+      "kind": "splat",
+      "lod": 1
+    },
+    {
+      "asset_id": "collision_env_01",
+      "kind": "mesh",
+      "lod": 0
+    },
+    {
+      "asset_id": "navmesh_env_01",
+      "kind": "mesh",
+      "lod": 0
+    }
+  ]
+}

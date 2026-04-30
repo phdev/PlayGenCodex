@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "premise_brief.schema.json",
+  "title": "PremiseBrief",
+  "type": "object",
+  "required": ["premise", "genre", "camera", "core_loop", "target_inputs"],
+  "properties": {
+    "premise": { "type": "string", "minLength": 5 },
+    "genre": { "type": "string" },
+    "camera": { "type": "string", "enum": ["top-down", "third-person", "first-person", "isometric"] },
+    "core_loop": { "type": "string" },
+    "target_inputs": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["touch", "kbm", "controller"] },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

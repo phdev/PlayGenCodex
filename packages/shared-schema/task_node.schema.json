@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task_node.schema.json",
+  "title": "TaskNode",
+  "type": "object",
+  "required": ["id", "title", "owner", "depends_on", "definition_of_done"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "owner": { "type": "string", "enum": ["planner", "assembler", "asset", "integrator", "qa"] },
+    "depends_on": { "type": "array", "items": { "type": "string" } },
+    "definition_of_done": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+  },
+  "additionalProperties": false
+}

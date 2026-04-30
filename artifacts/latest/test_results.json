@@ -1,0 +1,59 @@
+[
+  {
+    "slice_run_id": "slice-f171c226",
+    "profile": "touch",
+    "status": "pass",
+    "checks": [
+      {
+        "name": "load",
+        "pass": true
+      },
+      {
+        "name": "objective_complete",
+        "pass": true
+      },
+      {
+        "name": "restart",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "slice_run_id": "slice-f171c226",
+    "profile": "kbm",
+    "status": "pass",
+    "checks": [
+      {
+        "name": "load",
+        "pass": true
+      },
+      {
+        "name": "objective_complete",
+        "pass": true
+      },
+      {
+        "name": "restart",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "slice_run_id": "slice-f171c226",
+    "profile": "controller",
+    "status": "pass",
+    "checks": [
+      {
+        "name": "load",
+        "pass": true
+      },
+      {
+        "name": "objective_complete",
+        "pass": true
+      },
+      {
+        "name": "restart",
+        "pass": true
+      }
+    ]
+  }
+]
