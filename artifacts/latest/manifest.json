@@ -1,0 +1,51 @@
+{
+  "slice_run_id": "slice-f171c226",
+  "premise": "premise: neon rooftop extraction",
+  "task_graph": [
+    {
+      "id": "t1",
+      "title": "Generate concept image",
+      "owner": "planner",
+      "depends_on": [],
+      "definition_of_done": [
+        "style tags extracted"
+      ]
+    },
+    {
+      "id": "t2",
+      "title": "Assemble PlayCanvas scenes",
+      "owner": "assembler",
+      "depends_on": [
+        "t1"
+      ],
+      "definition_of_done": [
+        "boot/menu/gameplay/results created"
+      ]
+    },
+    {
+      "id": "t3",
+      "title": "Splat proxy collision",
+      "owner": "asset",
+      "depends_on": [
+        "t1"
+      ],
+      "definition_of_done": [
+        "collision mesh created",
+        "navmesh created"
+      ]
+    },
+    {
+      "id": "t4",
+      "title": "Run browser harness",
+      "owner": "qa",
+      "depends_on": [
+        "t2",
+        "t3"
+      ],
+      "definition_of_done": [
+        "touch/kbm/controller smoke pass"
+      ]
+    }
+  ],
+  "status": "planned"
+}
