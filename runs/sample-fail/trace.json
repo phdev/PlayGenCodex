@@ -1,0 +1,12 @@
+{
+  "scenarioId": "widgetkit-weather-widget",
+  "docsVersion": "v1-weak",
+  "task": "build-weather-widget",
+  "steps": [
+    {"type": "doc_lookup", "target": "README.md", "result": "found"},
+    {"type": "command", "command": "widgetkit --init weather", "result": "failed", "error": "Unknown flag --init"},
+    {"type": "code_generation", "apiUsed": "createWeatherCard", "documented": false},
+    {"type": "test_run", "command": "npm test", "passed": false}
+  ],
+  "artifacts": {"filesCreated": ["src/weather.js"]}
+}
