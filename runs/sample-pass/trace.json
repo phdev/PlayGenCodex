@@ -1,0 +1,13 @@
+{
+  "scenarioId": "widgetkit-weather-widget",
+  "docsVersion": "v2-agent-ready",
+  "task": "build-weather-widget",
+  "steps": [
+    {"type": "doc_lookup", "target": "README.md", "result": "found"},
+    {"type": "doc_lookup", "target": "docs-v2-agent-ready/quickstart.md", "result": "found"},
+    {"type": "command", "command": "node examples/widgetkit-sdk/cli/widgetkit.js init weather-widget", "result": "passed"},
+    {"type": "code_generation", "apiUsed": "createWidget", "documented": true},
+    {"type": "test_run", "command": "npm test", "passed": true}
+  ],
+  "artifacts": {"filesCreated": ["widget.config.json", "src/widget.js"]}
+}

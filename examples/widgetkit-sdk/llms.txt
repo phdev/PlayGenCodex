@@ -1,0 +1,6 @@
+# WidgetKit agent routing
+- Start here: docs-v2-agent-ready/quickstart.md
+- Agent-focused path: docs-v2-agent-ready/agent-guide.md
+- Canonical API: docs-v2-agent-ready/api-reference.md
+- Troubleshooting: docs-v2-agent-ready/troubleshooting.md
+- Avoid weak docs for implementation: docs-v1-weak/

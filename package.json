@@ -1,0 +1,13 @@
+{
+  "name": "agentready",
+  "version": "0.1.0",
+  "description": "AX validation harness for developer-agent onboarding journeys",
+  "type": "module",
+  "scripts": {
+    "agentready:fail": "node src/cli/agentready.js run runs/sample-fail/trace.json reports/sample-fail.md",
+    "agentready:pass": "node src/cli/agentready.js run runs/sample-pass/trace.json reports/sample-pass.md",
+    "agentready:report": "node src/cli/agentready.js report",
+    "agentready:test": "node --test",
+    "agentready:viewer": "node src/cli/agentready.js viewer"
+  }
+}
